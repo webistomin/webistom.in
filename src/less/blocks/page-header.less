@@ -1,6 +1,18 @@
 .page-header {
-  background-image: url("../img/pattern.png"), linear-gradient(to bottom, #000fff 20%, #ffffff 20%, #ffffff);
-  background-repeat: repeat;
+  //background-image: url("../img/pattern.png");
+  //background-repeat: repeat;
+  position: relative;
+
+  &::before {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 48px;
+    background-color: #000fff;
+    z-index: -1;
+  }
 
   &__logo {
     margin: 0;
@@ -25,6 +37,8 @@
   }
 
   &__inner {
+    padding: 0 3.125%;
+    position: relative;
     display: flex;
     justify-content: space-between;
   }
@@ -43,9 +57,9 @@
     align-items: center;
     cursor: pointer;
 
-    &:hover .page-header__line {
+    &--opened .page-header__line {
       &:nth-child(1) {
-        transform: rotate(45deg) translate(15px, 6px);
+        transform: rotate(45deg) translate(15px, 5px);
       }
 
       &:nth-child(2) {

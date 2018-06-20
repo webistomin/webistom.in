@@ -5,6 +5,7 @@
     position: relative;
     margin: 0;
     margin-bottom: 20px;
+    text-align: center;
   }
 
   &__caption {
@@ -42,6 +43,52 @@
 
   &__link {
     margin: 0 auto;
+    position: relative;
+    background-color: transparent;
+    color: #ffffff;
+    border: 2px solid #000fff;
+    transition: all 0.3s;
+
+    &:hover {
+      color: #000fff;
+    }
+
+    &:active {
+      transform: scale(0.8);
+      transition: all 0.3s;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      height: 100%;
+      left: 0;
+      top: 0;
+      width: 100%;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      background: #000fff;
+      height: 100%;
+      left: 0;
+      top: 0;
+      width: 100%;
+      -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      -o-transition: all 0.3s;
+      transition: all 0.3s;
+    }
+
+    &:hover::after {
+      height: 0;
+      left: 50%;
+      top: 50%;
+      width: 0;
+    }
   }
 
 

@@ -44,7 +44,7 @@
   }
 
   &__toggle {
-    margin-top: 3px;
+    margin-top: 6px;
     box-sizing: border-box;
     font-size: 0;
     background-color: transparent;
@@ -56,10 +56,11 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    outline: none;
 
     &--opened .page-header__line {
       &:nth-child(1) {
-        transform: rotate(45deg) translate(15px, 5px);
+        transform: rotate(45deg) translate(8px, 7px);
       }
 
       &:nth-child(2) {
@@ -67,14 +68,14 @@
       }
 
       &:nth-child(3) {
-        transform: rotate(-45deg) translate(15px, -6px);
+        transform: rotate(-45deg) translate(8px, -8px);
       }
     }
   }
 
   &__line {
     display: block;
-    height: 4px;
+    height: 1px;
     width: 45px;
     background: #fff;
     margin: 5px auto;

@@ -67,30 +67,22 @@
     background-color: rgba(255, 255, 255, 0.8);
   }
 
-  @keyframes pulse {
-    25% {
-      transform: scale(1.1);
-    }
-    75% {
-      transform: scale(0.9);
-    }
-  }
-
   &__link {
     margin: 0 auto;
     position: relative;
     color: #ffffff;
     background-color: #000fff;
     transition: all 0.3s ease-in-out;
-    -webkit-tap-highlight-color: transparent;
     transform: translateZ(0);
-    box-shadow: 0 0 1px transparent;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    transition-duration: 0.3s;
+    transition-property: transform;
+
 
     &:hover {
-      animation-name: pulse;
-      animation-duration: 1s;
-      animation-timing-function: linear;
-      animation-iteration-count: infinite;
+      transform: scale(1.1);
     }
 
     &:first-of-type {

@@ -91,5 +91,39 @@
     }
   }
 
+  @media @screen-md {
+    display: flex;
+    padding-bottom: 146px;
+
+    &__column {
+      margin-left: 40px;
+
+      &--margin {
+        margin-left: 80px;
+        flex-shrink: 0;
+      }
+    }
+
+    &__caption {
+      display: block;
+      left: -80px;
+    }
+
+    &__title {
+      text-align: left;
+      width: max-content;
+    }
+
+    &__text {
+      padding: 0;
+      text-align: left;
+    }
+
+    &__link {
+      margin: 0;
+      background-color: #ffffff;
+    }
+  }
+
 
 }

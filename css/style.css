@@ -696,6 +696,9 @@ picture {
   transform: scale3d(1.05, 1.05, 1);
   vertical-align: top;
 }
+.portfolio__list {
+  margin-bottom: 40px;
+}
 .portfolio__item {
   margin-bottom: 40px;
   position: relative;
@@ -808,6 +811,7 @@ picture {
 }
 .about__list {
   padding: 0 20px;
+  margin-bottom: 20px;
 }
 .about__item {
   margin-bottom: 5px;
@@ -869,6 +873,10 @@ picture {
   text-align: center;
   margin-bottom: 40px;
 }
+.contacts__title--small {
+  color: #ffffff;
+  font-size: 20px;
+}
 .contacts__info {
   display: flex;
   flex-direction: column;
@@ -894,6 +902,8 @@ picture {
 }
 .contacts__text {
   font-size: 17px;
+  line-height: 24px;
+  text-align: center;
   color: #ffffff;
   font-family: 'Raleway', sans-serif;
   font-style: normal;
@@ -944,9 +954,11 @@ picture {
   color: #ffffff;
   font-family: 'Raleway', sans-serif;
   font-style: normal;
+  font-size: 17px;
   font-weight: 400;
   margin-bottom: 40px;
   outline: none;
+  resize: none;
 }
 .contacts__message::-webkit-input-placeholder {
   color: #ffffff;

@@ -38,4 +38,42 @@
       color: #ffffff;
     }
   }
+
+  @media @screen-md {
+    &--closed {
+      transform: none;
+      transform-origin: initial;
+      position: relative;
+      width: auto;
+      top: initial;
+      left: initial;
+    }
+
+    &__list {
+      display: flex;
+    }
+
+    &__item {
+      border: 1px solid #fff;
+
+      &:hover {
+        border-color: #2f00fb;
+        background-color: #ffffff;
+        box-shadow: 4px 3px 0px 0px rgba(47,0,251, 1);
+        z-index: 10;
+      }
+    }
+
+    &__link {
+      padding: 7px 15px;
+
+      &:hover {
+        color: #2f00fb;
+      }
+
+      &:focus {
+        outline: thin dotted
+      }
+    }
+  }
 }

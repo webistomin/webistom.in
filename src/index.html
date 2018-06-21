@@ -25,6 +25,25 @@
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
+<script>
+    document.body.onload = function () {
+        setTimeout(function () {
+            var preloader = document.getElementById('loader');
+            if (!preloader.classList.contains('done')) {
+                preloader.classList.add('done');
+            }
+        }, 1000)
+    };
+</script>
+<div class="preloader" id="loader">
+  <div class="loader JS_on">
+    <span class="binary"></span>
+    <span class="binary"></span>
+    <span class="getting-there">LOADING STUFF...</span>
+  </div>
+</div>
+
+
 <!-- this svg is a container for svg icons and should not appear on the page.
 To emphasise this I use inline style="display: none" -->
 <svg xmlns="http://www.w3.org/2000/svg" style="display:none">

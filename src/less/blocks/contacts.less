@@ -41,7 +41,7 @@
   &__text {
     font-size: 17px;
     line-height: 24px;
-    text-align: center;
+    text-align: justify;
     color: #ffffff;
     font-family: 'Raleway',sans-serif;
     font-style: normal;
@@ -139,6 +139,24 @@
       transition: all 0.3s;
     }
 
+  }
+
+  @media @screen-sm {
+    &__title {
+      &--small {
+        font-size: 25px;
+      }
+    }
+
+    &__input,
+    &__message {
+      font-size: 20px;
+    }
+
+    &__text {
+      font-size: 20px;
+      line-height: 30px;
+    }
   }
 
 }

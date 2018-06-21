@@ -66,8 +66,8 @@ To emphasise this I use inline style="display: none" -->
       </button>
       <nav class="main-nav main-nav--closed">
         <ul class="main-nav__list">
-          <li class="main-nav__item"><a href="#portfolio" class="main-nav__link" data-scroll>Portfolio</a></li>
           <li class="main-nav__item"><a href="#about" class="main-nav__link" data-scroll>About me</a></li>
+          <li class="main-nav__item"><a href="#portfolio" class="main-nav__link" data-scroll>Portfolio</a></li>
           <li class="main-nav__item"><a href="#contacts" class="main-nav__link" data-scroll>Contacts</a></li>
         </ul>
       </nav>
@@ -111,6 +111,33 @@ To emphasise this I use inline style="display: none" -->
 
 <main class="page-content">
   <div class="container">
+    <section class="about" id="about">
+      <h3 class="about__title title">About me</h3>
+      <p class="about__text">I'm a positive and friendly person. Also, I love to set goals and achieve them. My important qualities: self-motivated, ability overcome difficulties and the ability to learn. These skills help me along the way:</p>
+      <ul class="about__list">
+        <li class="about__item">HTML 5</li>
+        <li class="about__item">CSS 3</li>
+        <li class="about__item">JavaScript (ES5, ES6)</li>
+        <li class="about__item">JQuery</li>
+        <li class="about__item">LESS</li>
+        <li class="about__item">Git</li>
+        <li class="about__item">Gulp</li>
+        <li class="about__item">Cross-browser markup</li>
+      </ul>
+      <p class="about__text">I create crossbrowser responsive HTML page layouts and make it live using JavaScript.</p>
+      <p class="about__text">My toolset includes LESS, JavaScript (ES6), Gulp, npm, Git, Photoshop and Avocode.</p>
+      <p class="about__text">I can help you with converting website design to HTML templates, with developing frontend for your project and with optimizing existing code.</p>
+      <p class="about__text"></p>
+      <h4 class="about__title about__title--small title">Education</h4>
+      <div class="about__desc">
+        <div class="about__info">
+          <span class="about__degree">Bachelor</span>
+          <time class="about__date">2018</time>
+        </div>
+        <p class="about__place"><a href="http://eng.ggtu.ru/" class="about__link">State University of Humanities and Technology, Orekhovo-Zuyevo</a></p>
+      </div>
+
+    </section>
     <section class="portfolio" id="portfolio">
       <h3 class="portfolio__title title">Portfolio</h3>
       <ul class="portfolio__list">
@@ -170,30 +197,10 @@ To emphasise this I use inline style="display: none" -->
           </div>
         </li>
       </ul>
+      <a href="#" class="portfolio__link btn">View all projects</a>
     </section>
-    <section class="about" id="about">
-      <h3 class="about__title title">About me</h3>
-      <p class="about__text">I'm a positive and friendly person. Also, I love to set goals and achieve them. My important qualities: self-motivated, ability overcome difficulties and the ability to learn. These skills help me along the way:</p>
-      <ul class="about__list">
-        <li class="about__item">HTML 5</li>
-        <li class="about__item">CSS 3</li>
-        <li class="about__item">JavaScript (ES5, ES6)</li>
-        <li class="about__item">JQuery</li>
-        <li class="about__item">LESS</li>
-        <li class="about__item">Git</li>
-        <li class="about__item">Gulp</li>
-        <li class="about__item">Cross-browser markup</li>
-      </ul>
-      <h4 class="about__title about__title--small title">Education</h4>
-      <div class="about__desc">
-        <div class="about__info">
-          <span class="about__degree">Bachelor</span>
-          <time class="about__date">2018</time>
-        </div>
-        <p class="about__place"><a href="http://eng.ggtu.ru/" class="about__link">State University of Humanities and Technology, Orekhovo-Zuyevo</a></p>
-      </div>
 
-    </section>
+
   </div>
 </main>
 
@@ -240,9 +247,10 @@ To emphasise this I use inline style="display: none" -->
       </div>
       <div class="contacts__column">
         <form action="#" class="contacts__field">
-          <p class="contacts__text">Please feel free to contact me for freelance projects and collaboration.</p>
-          <input type="text" class="contacts__input" required placeholder="Your name">
-          <input type="email" class="contacts__input" required placeholder="Your e-mail">
+          <h4 class="contacts__title contacts__title--small title">Thanks</h4>
+          <p class="contacts__text">You’ve just spent <span id="minutes"></span> minutes and <span id="seconds"></span> seconds looking at my homepage. Time is the most important thing we have, and unfortunately you will never get it back, so thank you very much for sharing it with me. Please feel free to contact me for freelance projects and collaboration.</p>
+          <input type="text" class="contacts__input" autocomplete="on" required placeholder="Your name">
+          <input type="email" class="contacts__input" autocomplete='email' required placeholder="Your e-mail">
           <textarea name="#" id="" cols="1" rows="1" class="contacts__message" placeholder="Message"></textarea>
           <button class="contacts__btn btn" type="submit">Send</button>
         </form>

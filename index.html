@@ -143,7 +143,12 @@ To emphasise this I use inline style="display: none" -->
       <ul class="portfolio__list">
         <li class="portfolio__item portfolio__item--blue">
           <figure class="portfolio__figure">
-            <img src="img/sport.png" alt="#" class="portfolio__pic" width="" height="">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/sport-desktop.jpg 1x, img/sport-desktop.jpg 2x">
+              <source media="(min-width: 992px)" srcset="img/sport-tablet.jpg 1x, img/sport-tablet.jpg 2x">
+              <source media="(min-width: 320px)" srcset="img/sport-mobile.jpg 1x, img/sport-mobile.jpg 2x">
+              <img src="img/sport-mobile.jpg" alt="Sport Store" class="portfolio__pic">
+            </picture>
             <figcaption class="portfolio__caption">Project "Sport Store"</figcaption>
           </figure>
 
@@ -154,10 +159,14 @@ To emphasise this I use inline style="display: none" -->
         </li>
         <li class="portfolio__item portfolio__item--top">
           <figure class="portfolio__figure">
-            <img src="img/cakes.png" alt="#" class="portfolio__pic" width="" height="">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/cakes-desktop.jpg 1x, img/cakes-desktop.jpg 2x">
+              <source media="(min-width: 992px)" srcset="img/cakes-tablet.jpg 1x, img/cakes-tablet.jpg 2x">
+              <source media="(min-width: 320px)" srcset="img/cakes-mobile.jpg 1x, img/cakes-mobile.jpg 2x">
+              <img src="img/cakes-mobile.jpg" alt="Cakes" class="portfolio__pic" width="" height="">
+            </picture>
             <figcaption class="portfolio__caption portfolio__caption--white">Project "Cakes"</figcaption>
           </figure>
-
           <div class="portfolio__buttons">
             <a href="https://webistomin.github.io/cakes-adaptive/" class="portfolio__link btn">Demo</a>
             <a href="https://github.com/webistomin/cakes-adaptive" class="portfolio__link btn">View source</a>
@@ -165,7 +174,12 @@ To emphasise this I use inline style="display: none" -->
         </li>
         <li class="portfolio__item portfolio__item--margin">
           <figure class="portfolio__figure">
-            <img src="img/park.png" alt="#" class="portfolio__pic" width="" height="">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/park-desktop.jpg 1x, img/park-desktop.jpg 2x">
+              <source media="(min-width: 992px)" srcset="img/park-tablet.jpg 1x, img/park-tablet.jpg 2x">
+              <source media="(min-width: 320px)" srcset="img/park-mobile.jpg 1x, img/park-mobile.jpg 2x">
+              <img src="img/park-mobile.jpg" alt="Park" class="portfolio__pic" width="" height="">
+            </picture>
             <figcaption class="portfolio__caption portfolio__caption--white">Project "Park"</figcaption>
           </figure>
 
@@ -176,7 +190,12 @@ To emphasise this I use inline style="display: none" -->
         </li>
         <li class="portfolio__item">
           <figure class="portfolio__figure">
-            <img src="img/mishka.png" alt="#" class="portfolio__pic" width="" height="">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/mishka-desktop.jpg 1x, img/mishka-desktop.jpg 2x">
+              <source media="(min-width: 992px)" srcset="img/mishka-tablet.jpg 1x, img/mishka-tablet.jpg 2x">
+              <source media="(min-width: 320px)" srcset="img/mishka-mobile.jpg 1x, img/mishka-mobile.jpg 2x">
+              <img src="img/mishka-mobile.jpg" alt="Park" class="portfolio__pic" width="" height="">
+            </picture>
             <figcaption class="portfolio__caption portfolio__caption--white">Project "Mishka"</figcaption>
           </figure>
 
@@ -187,7 +206,12 @@ To emphasise this I use inline style="display: none" -->
         </li>
         <li class="portfolio__item portfolio__item--margin">
           <figure class="portfolio__figure">
-            <img src="img/pink.png" alt="#" class="portfolio__pic" width="" height="">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/pink-desktop.jpg 1x, img/pink-desktop.jpg 2x">
+              <source media="(min-width: 992px)" srcset="img/pink-tablet.jpg 1x, img/pink-tablet.jpg 2x">
+              <source media="(min-width: 320px)" srcset="img/pink-mobile.jpg 1x, img/pink-mobile.jpg 2x">
+              <img src="img/pink-mobile.jpg" alt="Pink" class="portfolio__pic" width="" height="">
+            </picture>
             <figcaption class="portfolio__caption portfolio__caption--white">Project "Pink"</figcaption>
           </figure>
 
@@ -245,7 +269,7 @@ To emphasise this I use inline style="display: none" -->
             <a href="https://join.skype.com/invite/PEQX2bCxW3pW" class="contacts__link">+79996135062</a>
           </div>
       </div>
-      <div class="contacts__column">
+      <div class="contacts__column contacts__column--margin">
         <form action="#" class="contacts__field">
           <h4 class="contacts__title contacts__title--small title">Thanks</h4>
           <p class="contacts__text">You’ve just spent <span id="minutes"></span> minutes and <span id="seconds"></span> seconds looking at my homepage. Time is the most important thing we have, and unfortunately you will never get it back, so thank you very much for sharing it with me. Please feel free to contact me for freelance projects and collaboration.</p>

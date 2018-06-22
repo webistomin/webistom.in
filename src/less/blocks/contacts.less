@@ -36,6 +36,11 @@
     font-family: 'Raleway',sans-serif;
     font-style: normal;
     font-weight: 400;
+
+    &:hover {
+      text-decoration: underline;
+    }
+
   }
 
   &__text {
@@ -192,5 +197,13 @@
     }
   }
 }
+
+  @media @screen-lg-max {
+    &__column {
+      &--margin {
+        width: 480px;
+      }
+    }
+  }
 
 }

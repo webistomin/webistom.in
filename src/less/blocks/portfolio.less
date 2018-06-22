@@ -13,6 +13,7 @@
     -webkit-transform: scale3d(1.05,1.05,1);
     transform: scale3d(1.05,1.05,1);
     vertical-align: top;
+    width: 100%;
   }
 
   &__list {
@@ -128,7 +129,6 @@
 
     &__pic {
       transform: none;
-      width: 100%;
     }
 
 
@@ -181,7 +181,7 @@
     &__caption {
       bottom: -64px;
       background-color: transparent;
-      text-align: left;
+      text-align: center;
       font-size: 20px;
 
       &--white {
@@ -200,6 +200,11 @@
       text-align: center;
       background-color: #1d1d1d;
       color: #ffffff;
+
+      &--black {
+        background-color: #ffffff;
+        color: @color-text;
+      }
     }
 
     &__list {

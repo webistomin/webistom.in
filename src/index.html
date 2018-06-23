@@ -26,14 +26,14 @@
 </head>
 <body>
 <script>
-    document.body.onload = function () {
-        setTimeout(function () {
-            var preloader = document.getElementById('loader');
-            if (!preloader.classList.contains('done')) {
-                preloader.classList.add('done');
-            }
-        }, 1000)
-    };
+  document.body.onload = function () {
+    setTimeout(function () {
+      var preloader = document.getElementById('loader');
+      if (!preloader.classList.contains('done')) {
+        preloader.classList.add('done');
+      }
+    }, 1000)
+  };
 </script>
 <div class="preloader" id="loader">
   <div class="loader JS_on">
@@ -45,64 +45,80 @@
 <!-- this svg is a container for svg icons and should not appear on the page.
 To emphasise this I use inline style="display: none" -->
 <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
-  <symbol id="icon-facebook" viewBox="0 0 24 24"><path d="M9 8H6v4h3v12h5V12h3.642L18 8h-4V6.333C14 5.378 14.192 5 15.115 5H18V0h-3.808C10.596 0 9 1.583 9 4.615V8z"/></symbol>
-  <symbol id="icon-linkedin" viewBox="0 0 25 30"><path d="M4.98 3.5C4.98 4.881 3.87 6 2.5 6S.02 4.881.02 3.5C.02 2.12 1.13 1 2.5 1s2.48 1.12 2.48 2.5zM5 8H0v16h5V8zm7.982 0H8.014v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0V24H24V13.869c0-7.88-8.922-7.593-11.018-3.714V8z"/></symbol>
-  <symbol id="icon-github" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></symbol>
-  <symbol id="icon-skype" viewBox="0 0 24 24"><path d="M22.987 13.966C24.344 6.201 17.571-.446 9.935.987 4.114-2.574-2.568 4.213 1 10.016c-1.387 7.747 5.384 14.48 13.083 13.01 5.832 3.536 12.493-3.26 8.904-9.06zm-10.603 5.891c-3.181 0-6.378-1.448-6.362-3.941.005-.752.564-1.442 1.309-1.442 1.873 0 1.855 2.795 4.837 2.795 2.093 0 2.807-1.146 2.807-1.944 0-2.886-9.043-1.117-9.043-6.543 0-2.938 2.402-4.962 6.179-4.741 3.602.213 5.713 1.803 5.917 3.289.101.971-.542 1.727-1.659 1.727-1.628 0-1.795-2.181-4.6-2.181-1.266 0-2.334.528-2.334 1.674 0 2.395 8.99 1.005 8.99 6.276-.001 3.039-2.423 5.031-6.041 5.031z"/></symbol>
-  <symbol id="icon-telegram"><path d="M18.384 22.779a1.19 1.19 0 0 0 1.107.145 1.16 1.16 0 0 0 .724-.84C21.084 18 23.192 7.663 23.983 3.948a.78.78 0 0 0-.26-.758.8.8 0 0 0-.797-.14C18.733 4.602 5.82 9.447.542 11.4a.827.827 0 0 0-.542.799c.012.354.25.661.593.764 2.367.708 5.474 1.693 5.474 1.693s1.452 4.385 2.209 6.615c.095.28.314.5.603.576a.866.866 0 0 0 .811-.207l3.096-2.923s3.572 2.619 5.598 4.062zm-11.01-8.677l1.679 5.538.373-3.507 10.185-9.186a.277.277 0 0 0 .033-.377.284.284 0 0 0-.376-.064L7.374 14.102z"/></symbol>
-  <symbol id="icon-vk" viewBox="0 0 24 24"><path class="st0" d="M13.162 18.994c.609 0 .858-.406.851-.915-.031-1.917.714-2.949 2.059-1.604 1.488 1.488 1.796 2.519 3.603 2.519h3.2c.808 0 1.126-.26 1.126-.668 0-.863-1.421-2.386-2.625-3.504-1.686-1.565-1.765-1.602-.313-3.486C22.864 8.997 25.22 6 23.136 6h-3.981c-.772 0-.828.435-1.103 1.083-.995 2.347-2.886 5.387-3.604 4.922-.751-.485-.407-2.406-.35-5.261.015-.754.011-1.271-1.141-1.539A8.07 8.07 0 0 0 11.148 5c-2.273 0-3.841.953-2.95 1.119 1.571.293 1.42 3.692 1.054 5.16-.638 2.556-3.036-2.024-4.035-4.305C4.976 6.426 4.902 6 4.042 6H.787C.295 6 0 6.16 0 6.516c0 .602 2.96 6.72 5.786 9.77 2.756 2.975 5.48 2.708 7.376 2.708z"/></symbol>
+  <symbol id="icon-facebook" viewBox="0 0 24 24">
+    <path
+      d="M9 8H6v4h3v12h5V12h3.642L18 8h-4V6.333C14 5.378 14.192 5 15.115 5H18V0h-3.808C10.596 0 9 1.583 9 4.615V8z"/>
+  </symbol>
+  <symbol id="icon-linkedin" viewBox="0 0 25 30">
+    <path
+      d="M4.98 3.5C4.98 4.881 3.87 6 2.5 6S.02 4.881.02 3.5C.02 2.12 1.13 1 2.5 1s2.48 1.12 2.48 2.5zM5 8H0v16h5V8zm7.982 0H8.014v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0V24H24V13.869c0-7.88-8.922-7.593-11.018-3.714V8z"/>
+  </symbol>
+  <symbol id="icon-github" viewBox="0 0 24 24">
+    <path
+      d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+  </symbol>
+  <symbol id="icon-telegram">
+    <path
+      d="M18.384 22.779a1.19 1.19 0 0 0 1.107.145 1.16 1.16 0 0 0 .724-.84C21.084 18 23.192 7.663 23.983 3.948a.78.78 0 0 0-.26-.758.8.8 0 0 0-.797-.14C18.733 4.602 5.82 9.447.542 11.4a.827.827 0 0 0-.542.799c.012.354.25.661.593.764 2.367.708 5.474 1.693 5.474 1.693s1.452 4.385 2.209 6.615c.095.28.314.5.603.576a.866.866 0 0 0 .811-.207l3.096-2.923s3.572 2.619 5.598 4.062zm-11.01-8.677l1.679 5.538.373-3.507 10.185-9.186a.277.277 0 0 0 .033-.377.284.284 0 0 0-.376-.064L7.374 14.102z"/>
+  </symbol>
+  <symbol id="icon-vk" viewBox="0 0 24 24">
+    <path class="st0"
+          d="M13.162 18.994c.609 0 .858-.406.851-.915-.031-1.917.714-2.949 2.059-1.604 1.488 1.488 1.796 2.519 3.603 2.519h3.2c.808 0 1.126-.26 1.126-.668 0-.863-1.421-2.386-2.625-3.504-1.686-1.565-1.765-1.602-.313-3.486C22.864 8.997 25.22 6 23.136 6h-3.981c-.772 0-.828.435-1.103 1.083-.995 2.347-2.886 5.387-3.604 4.922-.751-.485-.407-2.406-.35-5.261.015-.754.011-1.271-1.141-1.539A8.07 8.07 0 0 0 11.148 5c-2.273 0-3.841.953-2.95 1.119 1.571.293 1.42 3.692 1.054 5.16-.638 2.556-3.036-2.024-4.035-4.305C4.976 6.426 4.902 6 4.042 6H.787C.295 6 0 6.16 0 6.516c0 .602 2.96 6.72 5.786 9.77 2.756 2.975 5.48 2.708 7.376 2.708z"/>
+  </symbol>
 </svg>
 
 <header class="page-header">
-    <div class="page-header__inner">
-      <div class="page-header__logotype">
-        <h1 class="page-header__logo">Istomin.</h1>
-        <span class="page-header__desc">Frontend developer</span>
-      </div>
-      <button class="page-header__toggle" type="button">Open menu
-        <span class="page-header__line"></span>
-        <span class="page-header__line"></span>
-        <span class="page-header__line"></span>
-      </button>
-      <nav class="main-nav main-nav--closed">
-        <ul class="main-nav__list">
-          <li class="main-nav__item"><a href="#about" class="main-nav__link" data-scroll>About me</a></li>
-          <li class="main-nav__item"><a href="#portfolio" class="main-nav__link" data-scroll>Portfolio</a></li>
-          <li class="main-nav__item"><a href="#contacts" class="main-nav__link" data-scroll>Contacts</a></li>
-        </ul>
-      </nav>
-      <section class="socials  socials--hidden">
-        <ul class="socials__list socials__list--justify">
-          <li class="socials__item socials__item--square">
-            <a href="#" class="socials__link">
-              <svg class="socials__icon socials__icon--rotate" width="30" height="30">
-                <use x="0" y="0" xlink:href="#icon-telegram"></use>
-              </svg>
-          </a>
-          </li>
-          <li class="socials__item socials__item--square"><a href="#" class="socials__link">
-            <svg class="socials__icon socials__icon--rotate" width="30" height="30">
-              <use x="0" y="0" xlink:href="#icon-vk"></use>
-            </svg>
-          </a></li>
-          <li class="socials__item socials__item--square"><a href="#" class="socials__link">
-            <svg class="socials__icon socials__icon--rotate" width="30" height="30">
-              <use x="0" y="0" xlink:href="#icon-linkedin"></use>
-            </svg>
-          </a></li>
-        </ul>
-      </section>
+  <div class="page-header__inner">
+    <div class="page-header__logotype">
+      <h1 class="page-header__logo">Istomin.</h1>
+      <span class="page-header__desc">Frontend developer</span>
     </div>
+    <button class="page-header__toggle" type="button">Open menu
+      <span class="page-header__line"></span>
+      <span class="page-header__line"></span>
+      <span class="page-header__line"></span>
+    </button>
+    <nav class="main-nav main-nav--closed">
+      <ul class="main-nav__list">
+        <li class="main-nav__item"><a href="#about" class="main-nav__link" data-scroll>About me</a></li>
+        <li class="main-nav__item"><a href="#portfolio" class="main-nav__link" data-scroll>Portfolio</a></li>
+        <li class="main-nav__item"><a href="#contacts" class="main-nav__link" data-scroll>Contacts</a></li>
+      </ul>
+    </nav>
+    <section class="socials  socials--hidden">
+      <ul class="socials__list socials__list--justify">
+        <li class="socials__item socials__item--square">
+          <a href="#" class="socials__link" target="_blank" rel="noopener noreferrer">
+            <svg class="socials__icon socials__icon--rotate" width="30" height="30">
+              <use x="0" y="0" xlink:href="#icon-telegram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="socials__item socials__item--square"><a href="#" class="socials__link" target="_blank" rel="noopener noreferrer">
+          <svg class="socials__icon socials__icon--rotate" width="30" height="30">
+            <use x="0" y="0" xlink:href="#icon-vk"></use>
+          </svg>
+        </a></li>
+        <li class="socials__item socials__item--square"><a href="#" class="socials__link" target="_blank" rel="noopener noreferrer">
+          <svg class="socials__icon socials__icon--rotate" width="30" height="30">
+            <use x="0" y="0" xlink:href="#icon-linkedin"></use>
+          </svg>
+        </a></li>
+      </ul>
+    </section>
+  </div>
   <div class="container">
     <section class="intro">
-      <div class="intro__column intro__column--margin"><figure class="intro__figure">
-        <img src="img/1.png" alt="Alexey Istomin" class="intro__img" width="552" height="692">
-        <figcaption class="intro__caption">No pain no gain</figcaption>
-      </figure>
+      <div class="intro__column intro__column--margin">
+        <figure class="intro__figure">
+          <img src="img/1.png" alt="Alexey Istomin" class="intro__img" width="552" height="692">
+          <figcaption class="intro__caption">No pain no gain</figcaption>
+        </figure>
       </div>
       <div class="intro__column intro__column--padding">
         <h2 class="intro__title title">Hello</h2>
-        <p class="intro__text">My name is Alexey, I'm a junior frontend developer. Ready to make your product better - more interesting - the coolest.</p>
+        <p class="intro__text">My name is Alexey, I'm a junior frontend developer. Ready to make your product better -
+          more interesting - the coolest.</p>
         <a href="#" class="intro__link btn">Let's talk</a>
       </div>
     </section>
@@ -113,7 +129,9 @@ To emphasise this I use inline style="display: none" -->
   <div class="container">
     <section class="about" id="about">
       <h3 class="about__title title">About me</h3>
-      <p class="about__text">I'm a positive and friendly person. Also, I love to set goals and achieve them. My important qualities: self-motivated, ability overcome difficulties and the ability to learn. These skills help me along the way:</p>
+      <p class="about__text">I'm a positive and friendly person. Also, I love to set goals and achieve them. My
+        important qualities: self-motivated, ability overcome difficulties and the ability to learn. These skills help
+        me along the way:</p>
       <ul class="about__list">
         <li class="about__item">HTML 5</li>
         <li class="about__item">CSS 3</li>
@@ -123,105 +141,112 @@ To emphasise this I use inline style="display: none" -->
         <li class="about__item">Git</li>
         <li class="about__item">Gulp</li>
         <li class="about__item">Cross-browser markup</li>
+        <li class="about__item">BEM-like naming and code organization</li>
+        <li class="about__item">Photoshop and Avocode</li>
       </ul>
       <p class="about__text">I create crossbrowser responsive HTML page layouts and make it live using JavaScript.</p>
-      <p class="about__text">My toolset includes LESS, JavaScript (ES6), Gulp, npm, Git, Photoshop and Avocode.</p>
       <p class="about__text">I can help you with converting website design to HTML templates, with developing frontend for your project and with optimizing existing code.</p>
-      <p class="about__text"></p>
+      <p class="about__text">All the things: responsive, adaptive, mobile-first.</p>
+      <p class="about__text">By default support IE10+, Edge, and modern version of Chrome, Mozilla Firefox, Opera, Safari.</p>
+      <p class="about__text">All that depends on me must works fast. Css-sprites, svg symbols, responsive images, efficient code, optimization and minification. Clean markup reach 90+ on Google Tests.</p>
+      <p class="about__text">I have some backend programming experience and think as a backend programmer will think when working with my code.</p>
       <h4 class="about__title about__title--small title">Education</h4>
       <div class="about__desc">
         <div class="about__info">
           <span class="about__degree">Bachelor</span>
           <time class="about__date">2018</time>
         </div>
-        <p class="about__place"><a href="http://eng.ggtu.ru/" class="about__link">State University of Humanities and Technology, Orekhovo-Zuyevo</a></p>
+        <p class="about__place"><a href="http://eng.ggtu.ru/" class="about__link" target="_blank" rel="noopener noreferrer">State University of Humanities and
+          Technology, Orekhovo-Zuyevo</a></p>
       </div>
 
     </section>
     <section class="portfolio" id="portfolio">
       <h3 class="portfolio__title title">Portfolio</h3>
       <ul class="portfolio__list">
-        <li class="portfolio__item portfolio__item--blue">
+        <li class="portfolio__item portfolio__item--blue" tabindex="0">
           <figure class="portfolio__figure">
             <picture>
-              <source media="(min-width: 1200px)" srcset="img/sport-desktop.jpg 1x, img/sport-desktop.jpg 2x">
-              <source media="(min-width: 992px)" srcset="img/sport-tablet.jpg 1x, img/sport-tablet.jpg 2x">
-              <source media="(min-width: 320px)" srcset="img/sport-mobile.jpg 1x, img/sport-mobile.jpg 2x">
-              <img src="img/sport-mobile.jpg" alt="Sport Store" class="portfolio__pic">
+              <source media="(min-width: 1200px)" data-srcset="img/sport-desktop.jpg 1x, img/sport-desktop@2x.jpg 2x">
+              <source media="(min-width: 992px)" data-srcset="img/sport-tablet.jpg 1x, img/sport-tablet@2x.jpg 2x">
+              <source media="(min-width: 320px)" data-srcset="img/sport-mobile.jpg 1x, img/sport-mobile@2x.jpg 2x">
+              <img data-src="img/sport-mobile.jpg" alt="Sport Store" class="portfolio__pic lazyload">
             </picture>
-            <figcaption class="portfolio__caption portfolio__caption--white portfolio__caption--black">Project "Sport Store"</figcaption>
+            <figcaption class="portfolio__caption portfolio__caption--white portfolio__caption--black">Project "Sport
+              Store"
+            </figcaption>
           </figure>
 
           <div class="portfolio__buttons">
-            <a href="http://ishop.mcdir.ru/" class="portfolio__link btn">Demo</a>
-            <a href="https://github.com/webistomin/my-shop" class="portfolio__link btn">View source</a>
+            <a href="http://ishop.mcdir.ru/" class="portfolio__link btn" target="_blank" rel="noopener noreferrer">Demo</a>
+            <a href="https://github.com/webistomin/my-shop" class="portfolio__link btn" target="_blank" rel="noopener noreferrer">View source</a>
           </div>
         </li>
-        <li class="portfolio__item portfolio__item--top">
+        <li class="portfolio__item portfolio__item--top" tabindex="0">
           <figure class="portfolio__figure">
             <picture>
-              <source media="(min-width: 1200px)" srcset="img/cakes-desktop.jpg 1x, img/cakes-desktop.jpg 2x">
-              <source media="(min-width: 992px)" srcset="img/cakes-tablet.jpg 1x, img/cakes-tablet.jpg 2x">
-              <source media="(min-width: 320px)" srcset="img/cakes-mobile.jpg 1x, img/cakes-mobile.jpg 2x">
-              <img src="img/cakes-mobile.jpg" alt="Cakes" class="portfolio__pic" width="" height="">
+              <source media="(min-width: 1200px)" data-srcset="img/cakes-desktop.jpg 1x, img/cakes-desktop@2x.jpg 2x">
+              <source media="(min-width: 992px)" data-srcset="img/cakes-tablet.jpg 1x, img/cakes-tablet@2x.jpg 2x">
+              <source media="(min-width: 320px)" data-srcset="img/cakes-mobile.jpg 1x, img/cakes-mobile@2x.jpg 2x">
+              <img data-src="img/cakes-mobile.jpg" alt="Cakes" class="portfolio__pic lazyload" width="" height="">
             </picture>
             <figcaption class="portfolio__caption portfolio__caption--white">Project "Cakes"</figcaption>
           </figure>
           <div class="portfolio__buttons">
-            <a href="https://webistomin.github.io/cakes-adaptive/" class="portfolio__link btn">Demo</a>
-            <a href="https://github.com/webistomin/cakes-adaptive" class="portfolio__link btn">View source</a>
+            <a href="https://webistomin.github.io/cakes-adaptive/" class="portfolio__link btn" target="_blank" rel="noopener noreferrer">Demo</a>
+            <a href="https://github.com/webistomin/cakes-adaptive" class="portfolio__link btn" target="_blank" rel="noopener noreferrer">View source</a>
           </div>
         </li>
-        <li class="portfolio__item portfolio__item--margin">
+        <li class="portfolio__item portfolio__item--margin" tabindex="0">
           <figure class="portfolio__figure">
             <picture>
-              <source media="(min-width: 1200px)" srcset="img/park-desktop.jpg 1x, img/park-desktop.jpg 2x">
-              <source media="(min-width: 992px)" srcset="img/park-tablet.jpg 1x, img/park-tablet.jpg 2x">
-              <source media="(min-width: 320px)" srcset="img/park-mobile.jpg 1x, img/park-mobile.jpg 2x">
-              <img src="img/park-mobile.jpg" alt="Park" class="portfolio__pic" width="" height="">
+              <source media="(min-width: 1200px)" data-srcset="img/park-desktop.jpg 1x, img/park-desktop@2x.jpg 2x">
+              <source media="(min-width: 992px)" data-srcset="img/park-tablet.jpg 1x, img/park-tablet@2x.jpg 2x">
+              <source media="(min-width: 320px)" data-srcset="img/park-mobile.jpg 1x, img/park-mobile@2x.jpg 2x">
+              <img data-src="img/park-mobile.jpg" alt="Park" class="portfolio__pic lazyload" width="" height="">
             </picture>
             <figcaption class="portfolio__caption portfolio__caption--white">Project "Park"</figcaption>
           </figure>
 
           <div class="portfolio__buttons">
-            <a href="https://webistomin.github.io/park-adaptive/" class="portfolio__link btn">Demo</a>
-            <a href="https://github.com/webistomin/park-adaptive" class="portfolio__link btn">View source</a>
+            <a href="https://webistomin.github.io/park-adaptive/" class="portfolio__link btn" target="_blank" rel="noopener noreferrer">Demo</a>
+            <a href="https://github.com/webistomin/park-adaptive" class="portfolio__link btn" target="_blank" rel="noopener noreferrer">View source</a>
           </div>
         </li>
-        <li class="portfolio__item">
+        <li class="portfolio__item" tabindex="0">
           <figure class="portfolio__figure">
             <picture>
-              <source media="(min-width: 1200px)" srcset="img/mishka-desktop.jpg 1x, img/mishka-desktop.jpg 2x">
-              <source media="(min-width: 992px)" srcset="img/mishka-tablet.jpg 1x, img/mishka-tablet.jpg 2x">
-              <source media="(min-width: 320px)" srcset="img/mishka-mobile.jpg 1x, img/mishka-mobile.jpg 2x">
-              <img src="img/mishka-mobile.jpg" alt="Park" class="portfolio__pic" width="" height="">
+              <source media="(min-width: 1200px)" data-srcset="img/mishka-desktop.jpg 1x, img/mishka-desktop@2x.jpg 2x">
+              <source media="(min-width: 992px)" data-srcset="img/mishka-tablet.jpg 1x, img/mishka-tablet@2x.jpg 2x">
+              <source media="(min-width: 320px)" data-srcset="img/mishka-mobile.jpg 1x, img/mishka-mobile@2x.jpg 2x">
+              <img data-src="img/mishka-mobile.jpg" alt="Park" class="portfolio__pic lazyload" width="" height="">
             </picture>
             <figcaption class="portfolio__caption portfolio__caption--white">Project "Mishka"</figcaption>
           </figure>
 
           <div class="portfolio__buttons">
-            <a href="https://webistomin.github.io/mishka-adaptive/" class="portfolio__link btn">Demo</a>
-            <a href="https://github.com/webistomin/mishka-adaptive" class="portfolio__link btn">View source</a>
+            <a href="https://webistomin.github.io/mishka-adaptive/" class="portfolio__link btn" target="_blank" rel="noopener noreferrer">Demo</a>
+            <a href="https://github.com/webistomin/mishka-adaptive" class="portfolio__link btn" target="_blank" rel="noopener noreferrer">View source</a>
           </div>
         </li>
-        <li class="portfolio__item portfolio__item--margin">
+        <li class="portfolio__item portfolio__item--margin" tabindex="0">
           <figure class="portfolio__figure">
             <picture>
-              <source media="(min-width: 1200px)" srcset="img/pink-desktop.jpg 1x, img/pink-desktop.jpg 2x">
-              <source media="(min-width: 992px)" srcset="img/pink-tablet.jpg 1x, img/pink-tablet.jpg 2x">
-              <source media="(min-width: 320px)" srcset="img/pink-mobile.jpg 1x, img/pink-mobile.jpg 2x">
-              <img src="img/pink-mobile.jpg" alt="Pink" class="portfolio__pic" width="" height="">
+              <source media="(min-width: 1200px)" data-srcset="img/pink-desktop.jpg 1x, img/pink-desktop@2x.jpg 2x">
+              <source media="(min-width: 992px)" data-srcset="img/pink-tablet.jpg 1x, img/pink-tablet@2x.jpg 2x">
+              <source media="(min-width: 320px)" data-srcset="img/pink-mobile.jpg 1x, img/pink-mobile@2x.jpg 2x">
+              <img data-src="img/pink-mobile.jpg" alt="Pink" class="portfolio__pic lazyload" width="" height="">
             </picture>
             <figcaption class="portfolio__caption portfolio__caption--white">Project "Pink"</figcaption>
           </figure>
 
           <div class="portfolio__buttons">
-            <a href="https://webistomin.github.io/pink-adaptive/" class="portfolio__link btn">Demo</a>
-            <a href="https://github.com/webistomin/pink-adaptive" class="portfolio__link btn">View source</a>
+            <a href="https://webistomin.github.io/pink-adaptive/" class="portfolio__link btn" target="_blank" rel="noopener noreferrer">Demo</a>
+            <a href="https://github.com/webistomin/pink-adaptive" class="portfolio__link btn" target="_blank" rel="noopener noreferrer">View source</a>
           </div>
         </li>
       </ul>
-      <a href="#" class="portfolio__link btn">View all projects</a>
+      <!--<a href="#" class="portfolio__link btn">View all projects</a>-->
     </section>
 
 
@@ -236,23 +261,28 @@ To emphasise this I use inline style="display: none" -->
         <section class="socials">
           <ul class="socials__list">
             <li class="socials__item">
-              <a href="https://t.me/webistomin" class="socials__link">
+              <a href="https://t.me/webistomin" class="socials__link" target="_blank" rel="noopener noreferrer">
                 <svg class="socials__icon" width="25" height="25">
                   <use x="0" y="0" xlink:href="#icon-telegram"></use>
                 </svg>
               </a>
             </li>
-            <li class="socials__item"><a href="https://vk.com/webistomin" class="socials__link">
+            <li class="socials__item"><a href="https://vk.com/webistomin" class="socials__link" target="_blank" rel="noopener noreferrer">
               <svg class="socials__icon" width="25" height="25">
                 <use x="0" y="0" xlink:href="#icon-vk"></use>
               </svg>
             </a></li>
-            <li class="socials__item"><a href="javascript: void(0);" class="socials__link">
-            <svg class="socials__icon" width="25" height="25">
-              <use x="0" y="0" xlink:href="#icon-linkedin"></use>
-            </svg>
-          </a></li>
-            <li class="socials__item"><a href="https://github.com/webistomin" class="socials__link">
+            <li class="socials__item"><a href="https://vk.com/webistomin" class="socials__link" target="_blank" rel="noopener noreferrer">
+              <svg class="socials__icon" width="25" height="25">
+                <use x="0" y="0" xlink:href="#icon-facebook"></use>
+              </svg>
+            </a></li>
+            <li class="socials__item"><a href="javascript: void(0);" class="socials__link" target="_blank" rel="noopener noreferrer">
+              <svg class="socials__icon" width="25" height="25">
+                <use x="0" y="0" xlink:href="#icon-linkedin"></use>
+              </svg>
+            </a></li>
+            <li class="socials__item"><a href="https://github.com/webistomin" class="socials__link" target="_blank" rel="noopener noreferrer">
               <svg class="socials__icon" width="25" height="25">
                 <use x="0" y="0" xlink:href="#icon-github"></use>
               </svg>
@@ -260,33 +290,68 @@ To emphasise this I use inline style="display: none" -->
           </ul>
         </section>
 
-          <div class="contacts__info">
-            <span class="contacts__desc">E-mail</span>
-            <a href="mailto:istomin.working@gmail.com" class="contacts__link">istomin.working@gmail.com</a>
-          </div>
-          <div class="contacts__info">
-            <span class="contacts__desc">Skype</span>
-            <a href="https://join.skype.com/invite/PEQX2bCxW3pW" class="contacts__link">+79996135062</a>
+        <div class="contacts__info">
+          <span class="contacts__desc">E-mail</span>
+          <a href="mailto:istomin.working@gmail.com" class="contacts__link">istomin.working@gmail.com</a>
+        </div>
+        <div class="contacts__info">
+          <span class="contacts__desc">Skype</span>
+          <a href="https://join.skype.com/invite/PEQX2bCxW3pW" class="contacts__link" target="_blank" rel="noopener noreferrer">+79996135062</a>
+        </div>
+        <div class="contacts__info">
+          <span class="contacts__desc">CV</span>
+          <a href="https://hh.ru/" class="contacts__link" target="_blank" rel="noopener noreferrer">Alexey Istomin</a>
           </div>
       </div>
       <div class="contacts__column contacts__column--margin">
         <form action="#" class="contacts__field">
           <h4 class="contacts__title contacts__title--small title">Thanks</h4>
-          <p class="contacts__text">You’ve just spent <span id="minutes"></span> minutes and <span id="seconds"></span> seconds looking at my homepage. Time is the most important thing we have, and unfortunately you will never get it back, so thank you very much for sharing it with me. Please feel free to contact me for freelance projects and collaboration.</p>
-          <input type="text" class="contacts__input" autocomplete="on" required placeholder="Your name">
-          <input type="email" class="contacts__input" autocomplete='email' required placeholder="Your e-mail">
-          <textarea name="#" id="" cols="1" rows="1" class="contacts__message" placeholder="Message"></textarea>
+          <p class="contacts__text">You’ve just spent <span id="minutes"></span> minutes and <span id="seconds"></span>
+            seconds looking at my homepage. Time is the most important thing we have, and unfortunately you will never
+            get it back, so thank you very much for sharing it with me. Please feel free to contact me for freelance
+            projects and collaboration.</p>
+          <div class="group">
+            <input class="inputMaterial" type="text" value="" id="name" name="name" required autocomplete="name">
+            <span class="highlight"></span>
+            <span class="bar"></span>
+            <label for="name">Your name</label>
+          </div>
+          <div class="group">
+            <input class="inputMaterial" type="email" value="" id="email" name="email" required
+                   onkeyup="this.setAttribute('value', this.value);" autocomplete="email">
+            <span class="highlight"></span>
+            <span class="bar"></span>
+            <label for="email">Your e-mail</label>
+          </div>
+          <div class="group">
+            <textarea name="message" cols="10" id="message" rows="3" class="inputMaterial" required></textarea>
+            <span class="highlight"></span>
+            <span class="bar"></span>
+            <label for="message">Your message</label>
+          </div>
           <button class="contacts__btn btn" type="submit">Send</button>
         </form>
       </div>
     </section>
     <section class="copyright">
-      <p class="copyright__text">©2018 ALL RIGHTS RESERVED. Alexey Istomin - junior frontend developer based in Russia.</p>
+      <p class="copyright__text">©2018 ALL RIGHTS RESERVED. Alexey Istomin - junior frontend developer based in
+        Russia.</p>
     </section>
   </div>
 </footer>
 
 <script src="js/script.min.js" defer></script>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const styles = ['css/style.min.css'];
+    styles.forEach((path) => {
+      const link = document.createElement('link');
+      link.rel = 'stylesheet';
+      link.href = path;
+      document.head.appendChild(link);
+    });
+  });
+</script>
 
 </body>
 </html>

@@ -106,6 +106,13 @@
     background-image: url("../img/pattern.png");
     background-repeat: repeat;
 
+    @media
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi) {
+      background-image: url("../img/pattern@2x.png");
+      background-size: 64px 120px;
+    }
+
     &__logo {
       font-size: 64px;
     }

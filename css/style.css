@@ -188,6 +188,10 @@ html {
 body {
   margin: 0;
   font-weight: 400;
+  -webkit-text-size-adjust: none;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: none;
+  -webkit-overflow-scrolling: touch;
 }
 img {
   max-width: 100%;
@@ -670,6 +674,12 @@ label {
   .page-header__logotype {
     margin-right: 25px;
     z-index: 2;
+  }
+}
+@media (min-width : 992px) and (-webkit-min-device-pixel-ratio: 2), (min-width : 992px) and (min-resolution: 192dpi) {
+  .page-header {
+    background-image: url("../img/pattern@2x.png");
+    background-size: 64px 120px;
   }
 }
 @media (min-width: 1200px) {
@@ -1243,7 +1253,8 @@ label {
 .portfolio__item:last-child {
   margin-bottom: 0;
 }
-.portfolio__item:hover .portfolio__buttons {
+.portfolio__item:hover .portfolio__buttons,
+.portfolio__item:focus .portfolio__buttons {
   -webkit-transform-origin: top;
           transform-origin: top;
   -webkit-transform: scaleY(1);

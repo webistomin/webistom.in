@@ -1,4 +1,4 @@
-# Личный проект «Cakes» [![Build status][travis-image]][travis-url] [![dependencies Status](https://david-dm.org/webistomin/cakes-adaptive/status.svg)](https://david-dm.org/webistomin/cakes-adaptive) [![Dependency status][dependency-image]][dependency-url] 
+# Личный проект «Webistomin»
 
 <table>
   <thead>
@@ -32,18 +32,3 @@
 *	### `package.json`
 *	### `.csscomb.json`
 ---
-
-## Проделанная работа
-Была выполнена адаптивная кроссбраузерная вёрстка лэндинга для онлайн-кондитерской. Сайт адаптирован под ретина дисплеи и под мобильные устройства, т.е. графика для каждой версии загружается через медиа-выражения (тег picture).
-
-## Различные тесты
-
-## Превью сайта
-<img src="mockup/mockup.png">
-
-
-[travis-image]: https://travis-ci.org/webistomin/cakes-adaptive.svg?branch=master
-[travis-url]: https://travis-ci.org/webistomin/cakes-adaptive
-[dependency-image]: https://david-dm.org/webistomin/cakes-adaptive/dev-status.svg?style=flat-square
-[dependency-url]: https://david-dm.org/webistomin/cakes-adaptive
-

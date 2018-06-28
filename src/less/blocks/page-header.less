@@ -16,12 +16,13 @@
 
   &__logo {
     margin: 0;
-    font-family: 'Oswald', serif;
+    font-family: 'Oswald', sans-serif;
     font-style: normal;
     font-weight: 700;
     text-transform: uppercase;
     color: #ffffff;
     font-size: 25px;
+    text-align: center;
   }
 
   &__desc {
@@ -29,11 +30,37 @@
     margin-top: -5px;
     font-size: 8px;
     color: #ffffff;
-    font-family: 'Raleway', serif;
+    font-family: 'Raleway', sans-serif;
     font-style: normal;
     font-weight: 400;
     text-transform: uppercase;
     letter-spacing: 1px;
+  }
+
+  &__link {
+    position: relative;
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.8125em;
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+    color: #ffffff;
+
+
+    &--active {
+      &::before {
+        content: "";
+        width: 100%;
+        height: 2px;
+        position: absolute;
+        bottom: -2px;
+        left: -1px;
+        background-color: #ffffff;
+      }
+    }
+  }
+
+  &__links {
+    color: #ffffff;
   }
 
   &__inner {
@@ -41,6 +68,7 @@
     position: relative;
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
 
   &__toggle {
@@ -55,7 +83,6 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    outline: none;
 
     &--opened .page-header__line {
       &:nth-child(1) {
@@ -93,6 +120,10 @@
     &__desc {
       margin-top: -4px;
       font-size: 10px;
+    }
+
+    &__link {
+      padding: 10px;
     }
   }
 
@@ -135,6 +166,12 @@
     &__logotype {
       margin-right: 25px;
       z-index: 2;
+    }
+
+    &__links {
+      z-index: 1;
+      position: absolute;
+      bottom: -40px;
     }
 
 

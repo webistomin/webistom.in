@@ -117,9 +117,103 @@
     background-color: @color-main;
     padding: 40px;
     box-shadow: -21px 22px 40px 0px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+  }
+
+  &__icon {
+    margin-left: 10px;
+    fill: #000fff;
+
+    &--hidden {
+      display: none;
+    }
+
+    &--visible {
+      display: block;
+    }
+
+    &--absolute {
+      fill: #ffffff;
+      position: absolute;
+      right: 18px;
+    }
+  }
+
+  .fade {
+    -webkit-animation: fade 2s;
+    animation: fade 2s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+  }
+
+  .fly {
+    position: absolute;
+    -webkit-animation-name: a;
+    animation-name: a;
+    -webkit-animation-duration: 10s;
+    animation-duration: 10s;
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-delay: 0;
+    animation-delay: 0;
+  }
+
+  @-webkit-keyframes fade {
+    0% {
+      color: transparent;
+    }
+    100% {
+      color: #fff;
+    }
+  }
+  @keyframes fade {
+    0% {
+      color: transparent;
+    }
+    100% {
+      color: #000fff;
+    }
+  }
+  @-webkit-keyframes a {
+    0% {
+      top: 10px;
+      left: 80px;
+    }
+    4% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    100% {
+      top: -10000px;
+      left: 10000px;
+      -webkit-transform: rotate(13360deg);
+      transform: rotate(13360deg);
+    }
+  }
+
+  @keyframes a {
+    0% {
+      top: 10px;
+      left: 80px;
+    }
+    4% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    100% {
+      top: -10000px;
+      left: 10000px;
+      -webkit-transform: rotate(13360deg);
+      transform: rotate(13360deg);
+    }
   }
 
   &__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #ffffff;
     color: @color-main;
     width: 100%;

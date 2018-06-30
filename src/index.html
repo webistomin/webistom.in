@@ -44,9 +44,14 @@
 <!-- this svg is a container for svg icons and should not appear on the page.
 To emphasise this I use inline style="display: none" -->
 <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+  <symbol id="icon-check" viewBox="0 0 24 24">
+    <path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/>
+  </symbol>
+  <symbol id="icon-plane" viewBox="0 0 24 24">
+    <path d="M24 0l-6 22-8.129-7.239 7.802-8.234-10.458 7.227-7.215-1.754 24-12zm-15 16.668v7.332l3.258-4.431-3.258-2.901z"/>
+  </symbol>
   <symbol id="icon-facebook" viewBox="0 0 24 24">
-    <path
-      d="M9 8H6v4h3v12h5V12h3.642L18 8h-4V6.333C14 5.378 14.192 5 15.115 5H18V0h-3.808C10.596 0 9 1.583 9 4.615V8z"/>
+    <path d="M9 8H6v4h3v12h5V12h3.642L18 8h-4V6.333C14 5.378 14.192 5 15.115 5H18V0h-3.808C10.596 0 9 1.583 9 4.615V8z"/>
   </symbol>
   <symbol id="icon-linkedin" viewBox="0 0 25 30">
     <path
@@ -309,7 +314,7 @@ To emphasise this I use inline style="display: none" -->
           </div>
       </div>
       <div class="contacts__column contacts__column--margin">
-        <form action="#" class="contacts__field">
+        <form action="" method="get" class="contacts__field">
           <h4 class="contacts__title contacts__title--small title">Thanks</h4>
           <p class="contacts__text">You’ve just spent <span id="minutes"></span> minutes and <span id="seconds"></span>
             seconds looking at my homepage. Time is the most important thing we have, and unfortunately you will never
@@ -334,7 +339,15 @@ To emphasise this I use inline style="display: none" -->
             <span class="bar"></span>
             <label for="message">Your message</label>
           </div>
-          <button class="contacts__btn btn" type="submit">Send</button>
+          <button class="contacts__btn btn" id="contact-submit" type="submit">
+            <span class="contacts__btn-text" id="btn-text">Send</span>
+            <svg class="contacts__icon" id="plane-btn" width="30" height="30">
+              <use x="0" y="0" xlink:href="#icon-plane"></use>
+            </svg>
+            <svg class="contacts__icon contacts__icon--hidden contacts__icon--absolute" id="plane-btn-absolute" width="30" height="30">
+              <use x="0" y="0" xlink:href="#icon-plane"></use>
+            </svg>
+          </button>
         </form>
       </div>
     </section>
@@ -359,7 +372,29 @@ To emphasise this I use inline style="display: none" -->
   });
 </script>
 <script>window.SmoothScrollOptions = { keyboardSupport: true }</script>
+<script>
+  var name = document.getElementById('name');
+  var email = document.getElementById('email');
+  var message = document.getElementById('message');
+  var send = document.getElementById('contact-submit');
+  var btnText = document.getElementById('btn-text');
+  var plane = document.getElementById('plane-btn');
+  var planeAbsolute = document.getElementById('plane-btn-absolute');
+  if(send) {
+    if(name.checkValidity && email.checkValidity && message.checkValidity) {
+      send.onclick = function () {
+        planeAbsolute.classList.remove('contacts__icon--hidden');
+        planeAbsolute.classList.add('contacts__icon--visible');
+        planeAbsolute.classList.add('fly');
+        btnText.classList.add('fade');
+        btnText.innerHTML = 'Sent';
+        plane.innerHTML = '<use x="0" y="0" xlink:href="#icon-check"></use>';
+      }
+    }
+  }
 
+
+</script>
 
 </body>
 </html>

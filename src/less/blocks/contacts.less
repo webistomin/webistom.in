@@ -52,6 +52,19 @@
     font-style: normal;
     font-weight: 400;
     margin-bottom: 40px;
+
+    &::selection {
+      background-color: #ffffff;
+      color: #1d1d1d;
+    }
+
+    & span {
+      &::selection {
+        background-color: #ffffff;
+        color: #1d1d1d;
+      }
+    }
+
   }
 
   &__inner {
@@ -81,7 +94,6 @@
     //outline-color: #ffffff;
     margin-bottom: 20px;
     outline: none;
-
 
     &:last-child {
       margin-bottom: 0;

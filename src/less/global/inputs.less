@@ -14,6 +14,24 @@
   background-color: transparent;
   color: #ffffff;
   resize: none;
+
+
+  &::selection {
+    background-color: #ffffff;
+    color: #1d1d1d;
+  }
+
+  &:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 30px #000fff inset;
+  }
+
+  &:-webkit-autofill {
+    -webkit-text-fill-color: #ffffff !important;
+  }
+
+  &:-webkit-autofill {
+    caret-color: #ffffff;
+  }
 }
 
 .inputMaterial:focus {

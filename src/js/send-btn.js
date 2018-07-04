@@ -6,13 +6,19 @@ var send = document.getElementById('contact-submit');
 var btnText = document.getElementById('btn-text');
 var plane = document.getElementById('plane-btn');
 var planeAbsolute = document.getElementById('plane-btn-absolute');
-if (send) {
-    send.onclick = function () {
-      planeAbsolute.classList.remove('contacts__icon--hidden');
-      planeAbsolute.classList.add('contacts__icon--visible');
-      planeAbsolute.classList.add('fly');
-      btnText.classList.add('fade');
-      btnText.innerHTML = 'Sent';
-      plane.innerHTML = '<use x="0" y="0" xlink:href="#icon-check"></use>';
+
+send.onclick = function () {
+  if (name1.validity.valid && email1.validity.valid && message1.validity.valid) {
+    planeAbsolute.classList.remove('contacts__icon--hidden');
+    planeAbsolute.classList.add('contacts__icon--visible');
+    planeAbsolute.classList.add('fly');
+    btnText.classList.add('fade');
+    btnText.innerHTML = 'Sent';
+    plane.innerHTML = '<use x="0" y="0" xlink:href="#icon-check"></use>';
   }
-}
+};
+
+
+
+
+

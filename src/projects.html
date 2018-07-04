@@ -641,13 +641,13 @@ To emphasise this I use inline style="display: none" -->
   </symbol>
 </svg>
 <header class="page-header page-header--blue">
-  <div class="page-header__inner">
-    <div class="page-header__links">
+  <div class="page-header__inner page-header__inner--blue">
+    <div class="page-header__links page-header__links--high">
       <a href="/ru/index.html" class="page-header__link page-header__link--ru" title="Russian version">RU</a>/
       <a href="javascript:void(0);" class="page-header__link page-header__link--active page-header__link--en" title="English version">EN</a>
     </div>
-    <div class="page-header__logotype">
-      <h1 class="page-header__logo">Istomin.</h1>
+    <div class="page-header__logotype page-header__logotype--padding">
+      <h1 class="page-header__logo"><a href="/" class="page-header__home">Istomin.</a></h1>
       <span class="page-header__desc">Frontend developer</span>
     </div>
     <button class="page-header__toggle" type="button" tabindex="0">Open menu
@@ -655,26 +655,38 @@ To emphasise this I use inline style="display: none" -->
       <span class="page-header__line"></span>
       <span class="page-header__line"></span>
     </button>
-    <div class="page-header__title">All projects</div>
+    <nav class="main-nav main-nav--closed">
+      <ul class="main-nav__list">
+        <li class="main-nav__item main-nav__item--blue">
+          <a href="/" class="main-nav__link main-nav__link--white" data-scroll>Home</a>
+        </li>
+        <li class="main-nav__item main-nav__item--blue">
+          <a href="#portfolio" class="main-nav__link main-nav__link--white" data-scroll>Projects</a>
+        </li>
+        <li class="main-nav__item main-nav__item--blue">
+          <a href="#contacts" class="main-nav__link main-nav__link--white" data-scroll>Contacts</a>
+        </li>
+      </ul>
+    </nav>
     <section class="socials  socials--hidden">
       <ul class="socials__list socials__list--justify">
-        <li class="socials__item socials__item--square">
+        <li class="socials__item socials__item--white socials__item--square">
           <a href="https://t.me/webistomin" class="socials__link" target="_blank" rel="noopener noreferrer" title="Telegram">
-            <svg class="socials__icon socials__icon--rotate" width="30" height="30">
+            <svg class="socials__icon socials__icon--blue socials__icon--rotate" width="30" height="30">
               <use x="0" y="0" xlink:href="#icon-telegram"></use>
             </svg>
           </a>
         </li>
-        <li class="socials__item socials__item--square">
+        <li class="socials__item socials__item--white socials__item--square">
           <a href="https://vk.com/webistomin" class="socials__link" target="_blank" rel="noopener noreferrer" title="VK">
-            <svg class="socials__icon socials__icon--rotate" width="30" height="30">
+            <svg class="socials__icon socials__icon--blue socials__icon--rotate" width="30" height="30">
               <use x="0" y="0" xlink:href="#icon-vk"></use>
             </svg>
           </a>
         </li>
-        <li class="socials__item socials__item--square">
+        <li class="socials__item socials__item--white socials__item--square">
           <a href="https://www.linkedin.com/in/webistomin/" class="socials__link" target="_blank" rel="noopener noreferrer" title="LinkedIn">
-            <svg class="socials__icon socials__icon--rotate" width="30" height="30">
+            <svg class="socials__icon socials__icon--blue socials__icon--rotate" width="30" height="30">
               <use x="0" y="0" xlink:href="#icon-linkedin"></use>
             </svg>
           </a>
@@ -687,7 +699,7 @@ To emphasise this I use inline style="display: none" -->
 <main class="page-content">
   <div class="container">
     <section class="portfolio" id="portfolio">
-      <h3 class="portfolio__title title">Portfolio</h3>
+      <h3 class="portfolio__title title">All projects</h3>
       <ul class="portfolio__list">
         <li class="portfolio__item portfolio__item--blue" tabindex="0">
           <figure class="portfolio__figure">
@@ -774,6 +786,112 @@ To emphasise this I use inline style="display: none" -->
     </section>
   </div>
 </main>
+
+<footer class="page-footer">
+  <div class="container">
+    <section class="contacts" id="contacts">
+      <div class="contacts__column">
+        <h3 class="contacts__title title">Contacts</h3>
+        <section class="socials">
+          <ul class="socials__list">
+            <li class="socials__item">
+              <a href="https://t.me/webistomin" class="socials__link" target="_blank" rel="noopener noreferrer" title="Telegram">
+                <svg class="socials__icon" width="25" height="25">
+                  <use x="0" y="0" xlink:href="#icon-telegram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a href="https://vk.com/webistomin" class="socials__link" target="_blank" rel="noopener noreferrer" title="VK">
+                <svg class="socials__icon" width="25" height="25">
+                  <use x="0" y="0" xlink:href="#icon-vk"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a href="https://www.facebook.com/webistomin" class="socials__link" target="_blank" rel="noopener noreferrer" title="Facebook">
+                <svg class="socials__icon" width="25" height="25">
+                  <use x="0" y="0" xlink:href="#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a href="https://linkedin.com/in/webistomin
+" class="socials__link" target="_blank" rel="noopener noreferrer" title="LinkedIn">
+                <svg class="socials__icon" width="25" height="25">
+                  <use x="0" y="0" xlink:href="#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a href="https://github.com/webistomin" class="socials__link" target="_blank" rel="noopener noreferrer" title="GitHub">
+                <svg class="socials__icon" width="25" height="25">
+                  <use x="0" y="0" xlink:href="#icon-github"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </section>
+
+        <div class="contacts__info">
+          <span class="contacts__desc">E-mail</span>
+          <a href="mailto:istomin.working@gmail.com" class="contacts__link">istomin.working@gmail.com</a>
+        </div>
+        <div class="contacts__info">
+          <span class="contacts__desc">Skype</span>
+          <a href="https://join.skype.com/invite/PEQX2bCxW3pW" class="contacts__link" target="_blank" rel="noopener noreferrer">+79996135062</a>
+        </div>
+        <div class="contacts__info">
+          <span class="contacts__desc">CV</span>
+          <a href="https://hh.ru/" class="contacts__link" target="_blank" rel="noopener noreferrer" title="HeadHunter">Alexey Istomin</a>
+        </div>
+      </div>
+      <div class="contacts__column contacts__column--margin">
+        <form action="" method="get" class="contacts__field">
+          <h4 class="contacts__title contacts__title--small title">Thanks</h4>
+          <p class="contacts__text">You’ve just spent
+            <span id="minutes"></span> minutes and
+            <span id="seconds"></span>
+            seconds looking at my homepage. Time is the most important thing we have, and unfortunately you will never get it back, so
+            thank you very much for sharing it with me. Please feel free to contact me for freelance projects and collaboration.</p>
+          <div class="group">
+            <input class="inputMaterial" type="text" value="" id="name" name="name" required autocomplete="name" onkeyup="this.setAttribute('value', this.value);">
+            <span class="highlight"></span>
+            <span class="bar"></span>
+            <label for="name">Your name</label>
+          </div>
+          <div class="group">
+            <input class="inputMaterial" type="email" value="" id="email" name="email" required onkeyup="this.setAttribute('value', this.value);"
+                   autocomplete="email">
+            <span class="highlight"></span>
+            <span class="bar"></span>
+            <label for="email">Your e-mail</label>
+          </div>
+          <div class="group">
+            <textarea name="message" cols="10" id="message" rows="3" class="inputMaterial" required onkeyup="this.setAttribute('value', this.value);"></textarea>
+            <span class="highlight"></span>
+            <span class="bar"></span>
+            <label for="message">Your message</label>
+          </div>
+          <button class="contacts__btn btn" id="contact-submit" type="submit">
+            <span class="contacts__btn-text" id="btn-text">Send</span>
+            <svg class="contacts__icon" id="plane-btn" width="30" height="30">
+              <use x="0" y="0" xlink:href="#icon-plane"></use>
+            </svg>
+            <svg class="contacts__icon contacts__icon--hidden contacts__icon--absolute" id="plane-btn-absolute" width="30" height="30">
+              <use x="0" y="0" xlink:href="#icon-plane"></use>
+            </svg>
+          </button>
+        </form>
+      </div>
+    </section>
+    <section class="copyright">
+      <p class="copyright__text">©2018 ALL RIGHTS RESERVED. Alexey Istomin - junior frontend developer based in Russia.
+      </p>
+    </section>
+
+  </div>
+</footer>
 
 
 

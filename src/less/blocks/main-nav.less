@@ -56,11 +56,25 @@
     &__item {
       border: 1px solid #fff;
 
+
+
       &:hover {
         border-color: @color-main;
         background-color: #ffffff;
         box-shadow: 4px 3px 0px 0px rgba(0,0,255, 1);
         z-index: 10;
+      }
+
+      &--blue {
+        border: none;
+        background-color: transparent;
+
+        &:hover {
+          border-color: #ffffff;
+          background-color: #ffffff;
+          box-shadow: 4px 3px 0px 0px rgba(255,255,255, 0.5);
+          z-index: 10;
+        }
       }
 
       &:active {
@@ -71,6 +85,14 @@
 
     &__link {
       padding: 7px 15px;
+
+      &--white {
+        color: #FFFFFF;
+
+        &:hover {
+          color: #FFFFFF;
+        }
+      }
 
       &:hover {
         color: #2f00fb;

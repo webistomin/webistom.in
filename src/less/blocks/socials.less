@@ -27,6 +27,14 @@
     vertical-align: top;
     fill: @color-grey;
 
+    &--blue {
+      fill: @color-main;
+
+      &:hover {
+        fill: @color-main;
+      }
+    }
+
     &:hover {
       fill: @color-main;
     }
@@ -93,7 +101,17 @@
         &:hover .socials__icon--rotate {
           fill: #ffffff;
         }
+
+        &:hover .socials__icon--blue {
+            fill: @color-main;
+        }
       }
+
+      &--white {
+        background-color: #ffffff;
+      }
+
+
     }
 
     &__link {
@@ -108,6 +126,14 @@
         fill: #ffffff;
         transform: rotate(-45deg);
 
+      }
+
+      &--blue {
+        fill: @color-main;
+
+        &:hover {
+          fill: @color-main;
+        }
       }
     }
   }
